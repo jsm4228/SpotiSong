@@ -1,0 +1,63 @@
+body {
+    background-color: #8CA597;
+    font-family:'open-sans', sans-serif;
+}
+
+.container {
+    position: absolute;
+    display: flex;
+    width: 546px;
+    height: 586px;
+    left: 154px;
+    top: 170px;
+    justify-content: center;
+}
+
+.guess-board {
+    border: solid;
+    display: grid;
+    grid-row: auto;
+    justify-content: center;
+    padding: 10px 10px 10px 10px;
+}
+
+.guess-rectangle {
+    border: solid;
+    width: 491px;
+    height: 56px;
+    margin: 10px 2px 10px 2px;
+    color: white;
+}
+
+.music-player{
+    width: 491px;
+    height: 28px;
+    border: solid;
+    display: grid;
+    margin: 10px 2px 10px 2px;
+    color: white;
+}
+
+.controls {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+
+   
+}
+
+.play {
+    width: 150px;
+    height: 50px;
+    color: white;
+    background-color: transparent;
+   
+}
+
+.add-time {
+    width: 75px;
+    height: 50px;
+    color: white;
+    background-color: transparent;
+}
