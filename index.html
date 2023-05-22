@@ -8,28 +8,33 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script defer src="script.js"></script>
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/headset.css' rel='stylesheet'>
 </head>
 <body>
-    <div class="container">
-        <div class="guess-board">
-            <div class="guess-rectangle" id="guess-1"></div>
-            <div class="guess-rectangle" id="guess-2"></div>
-            <div class="guess-rectangle" id="guess-3"></div>
-            <div class="guess-rectangle" id="guess-4"></div>
-            <div class="guess-rectangle" id="guess-5"></div>
-            <div class="guess-rectangle" id="guess-6"></div>
-            <div class="music-player"></div>
-            <div class="controls">
-                <button class="play">Play</button>
-                <button class="add-time">+3s</button>
+    <h1>Spotisong</h1>
+    <div class="container-main">
+        <div class="container-left">
+            <div class="guess-board">
+                <div class="guess-rectangle" id="guess-1"></div>
+                <div class="guess-rectangle" id="guess-2"></div>
+                <div class="guess-rectangle" id="guess-3"></div>
+                <div class="guess-rectangle" id="guess-4"></div>
+                <div class="guess-rectangle" id="guess-5"></div>
+                <div class="guess-rectangle" id="guess-6"></div>
+                <div class="music-player"></div>
+                <div class="controls">
+                    <button class="play"><img id="play-img" src="https://png.pngtree.com/png-clipart/20190619/original/pngtree-vector-play-icon-png-image_4013500.jpg" alt=""></button>
+                    <button class="add-time">+3s</button>
+                </div>
             </div>
-        </div>
-       
         
-    </div>
-
-    <div class="song-info">
-
-    </div>
+            
+        </div>
+        <div class="container-right">
+            <div class="song-info">
+            </div>
+            <i class="gg-headset" style="transform: scale(20);"></i>
+        </div>   
+    </div>  
 </body>
 </html>
