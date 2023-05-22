@@ -2,6 +2,7 @@
 //Global Variables
 let song
 let stopTime = 2000
+let guessTracker = 1
 
 //Functions
 const loadRandSong = async () => {
@@ -19,6 +20,13 @@ const playSong = async () => {
     //setTimeout(() => song.play(), 10000)
 }
 
+const addTime = () => {
+    stopTime+=2000
+    let rect = document.querySelector(`#guess-${guessTracker}`)
+    rect.style.backgroundColor = '#FFFFFF'
+    guessTracker++
+}
+
 
 //Buttons
 const playButton = document.querySelector('.play')
@@ -30,9 +38,7 @@ playButton.addEventListener('click', async ()=> {
 
     playSong()
 })
-addButton.addEventListener('click', ()=> {
-    stopTime+=(2000)
-})
+addButton.addEventListener('click', addTime)
 
 document.addEventListener('DOMContentLoaded', async ()=> {
     await loadRandSong()
