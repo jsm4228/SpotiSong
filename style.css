@@ -86,19 +86,79 @@ h1{
 
 .container-right {
     order: 2;
-    width: 546px;
-    height: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    border: solid 5px;
-    border-radius: 20px;
+    z-index:-1;
    
 }
 
 
 .gg-headset{
     margin: auto;
-    position: relative;
-    top: 200px;
+    position: absolute;
+    opacity: 0;
 }
+
+.song-info{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 546px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.album-art{
+    position: absolute;
+    width: 172px;
+    height: 148px;
+    left: 65px;
+    top: 39px;
+    border: solid;
+    margin: 0;
+    padding: 0;
+}
+.song-name{
+    position: absolute;
+    width: 176px;
+    height: 66px;
+    left: 302px;
+    top: 39px;
+    border: solid;
+}
+
+.song-artist{
+    position: absolute;
+    width: 176px;
+    height: 66px;
+    left: 302px;
+    top: 121px;
+    border: solid;
+}
+
+.song-stats{
+    display: grid;
+    grid-row: auto;
+    justify-content: center;
+    margin: auto;
+    border-radius: 20px;
+    position: absolute;
+    left: 65px;
+    top: 236px;
+}
+
+.stat{
+    border: solid;
+    width: 413px;
+    height: 33px;
+}
+
+.input{
+    order: 3;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-radius: 10px;
+    z-index: 1000 !important;
+}
+
 
