@@ -21,7 +21,9 @@
                 <div class="guess-rectangle" id="guess-4"></div>
                 <div class="guess-rectangle" id="guess-5"></div>
                 <div class="guess-rectangle" id="guess-6"></div>
-                <div class="music-player"></div>
+                <div class="music-player">
+                    <div id="progress-bar"></div>
+                </div>
                 <div class="controls">
                     <button class="play"><img id="play-img" src="https://png.pngtree.com/png-clipart/20190619/original/pngtree-vector-play-icon-png-image_4013500.jpg" alt=""></button>
                     <button class="add-time">+3s</button>
@@ -32,22 +34,23 @@
         </div>
         <div class="container-right">
             <div class="song-info">
-                <div class="album-art">Album</div>
-                <div class="song-name">Song Name</div>
-                <div class="song-artist">Song Artist</div>
+                <img class="album-art" id = 'art' src="" alt="">
+                <div class="song-name"></div>
+                <div class="song-artist"></div>
                 <div class="song-stats">
-                    <div class="stat">Song Release Date: </div>
-                    <div class="stat">Top 100 Ranking: </div>
-                    <div class="stat">Song Link </div>
-                    <div class="stat">Song Length: </div>
+                    <div class="stat"></div>
+                    <div class="stat"></div>
+                    <div class="stat">T</div>
+                    <a class="stat" id="song-link" href=""></a>
+                    <div class="stat"></div>
                 </div>
             </div>
             <i class="gg-headset" style="transform: scale(var(--ggs,20));"></i>
-            <h2 class="result">Result</h2>
-            
+            <h2 class="result"></h2>
+            <form id="form" onsubmit="return false;">
+                <input type="text" id="guess" placeholder="Enter guess here" value="">
+             <form>
         </div>   
     </div>  
-<input type="text" id="guess" placeholder="Enter guess here" value="">
-<input type="submit" id="submit" value="Submit">
 </body>
 </html>
