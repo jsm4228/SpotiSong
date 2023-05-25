@@ -24,7 +24,7 @@ h1{
 }
 
 .guess-board {
-    border: solid 5px;
+    border: solid 2px;
     display: grid;
     grid-row: auto;
     justify-content: center;
@@ -33,18 +33,18 @@ h1{
 }
 
 .guess-rectangle {
-    border: solid 5px;
+    border: solid 2px;
     width: 491px;
     height: 56px;
     margin: 10px 2px 10px 2px;
     color: white;
     border-radius: 20px;
+    opacity: 0.7;
 }
 
 .music-player{
     width: 491px;
-    height: 28px;
-    border: solid 5px;
+    height: 14px;
     display: grid;
     margin: 10px 2px 10px 2px;
     color: white;
@@ -55,6 +55,7 @@ h1{
     width: 0px;
     color: white;
     background-color: white;
+    opacity: 0.8;
 
 }
 

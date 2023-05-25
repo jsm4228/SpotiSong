@@ -160,7 +160,7 @@ playButton.addEventListener('click', async ()=> {
             console.log('hi')
         }
 
-        requestAnimationFrame(animate);
+        requestAnimationFrame(animate); 
     }
     animate()
 
