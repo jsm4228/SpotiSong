@@ -39,12 +39,14 @@ const playSong = async () => {
 }
 
 const addTime = () => {
-    stopTime+=2000
-    let rect = document.querySelector(`#guess-${guessTracker}`)
-    rect.style.backgroundColor = '#FFFFFF'
-    guessTracker++
-
-    if(guessTracker>=7) updateFeedbackBox()
+    if(guessTracker<7) 
+    {
+        stopTime+=2000
+        let rect = document.querySelector(`#guess-${guessTracker}`)
+        rect.style.backgroundColor = '#FFFFFF'
+        guessTracker++
+    }
+    else updateFeedbackBox(3)
 }
 
 const updateFeedbackBox = (num) => {
@@ -64,6 +66,8 @@ const updateFeedbackBox = (num) => {
             stats.style.opacity = 0
             console.log('hi')
             break;
+        case 3:
+            result.innerText='No more guesses!'
 
     }
 }
