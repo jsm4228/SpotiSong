@@ -14,3 +14,8 @@ SpotiSong is a game based on the popular game, Heardle, where you need to guess 
 
 ## Project Timeline
 * https://trello.com/b/1Z9PxIiX/heardle-game
+
+## Wireframe
+* https://www.figma.com/file/dkijc2GRp1t8Dw8aBifDFV/Wireframing-(Copy)?type=design&node-id=710477-512&t=IG3io7n4RRU30akG-0
+
+
